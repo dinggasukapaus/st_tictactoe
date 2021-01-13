@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Rubik Mono One' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 form-container">
+				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+					<i class=" iconx fa fa-remove"style="font-size:200px;color:#9e3cff"></i>
+					<p class="petik">"</p>
+						<p class="text1">
+						Tic-tac-toe adalah prmainan
+						kertas dan pensil untuk dua
+						permainan X dan O, yang
+						bergiliran menandai ruang
+						dalam grid 3 x 3
+					</p>
+					
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 form-container">
+				<div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+					<div class="heading mb-1">
+						<h1>Join the game!</h1>
+                        <h6 class="heading mb-6">Go inside the best gamers</h6>
+                        <h6 class="heading mb-6">social network!</h6>
+					</div>
+					<div class="sm">
+                        <a class="sosmed" href="#"><i class="fa fa-google"></i></a>
+                        <a class="sosmed" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="sosmed" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a class="sosmed" href="#"><i class="fa fa-github"></i></a>
+                    </div>
+					<form>
+						<div class="form-input text-white">
+							<label class="d-flex label" >Username</label>
+							<input type="text" placeholder="" required class= "form-control">
+						</div>
+						<div class="form-input text-white">
+							<label class="d-flex label" >Password</label>
+						</div>
+						<div class="password-show-card">
+							<input type="password" class="form-control" placeholder="">
+							<i class="fa fa-eye password-show text-white"></i>
+						</div>
+
+						<div class="row mb-3">
+							<div class="col-12 text-right">
+								<a href="" class="forget-link">Forget Password?</a>
+							</div>
+						</div>
+						<div class="text-left mb-3">
+							<button type="submit" class="btn">Login</button>
+						</div>
+						<div class= "new-user">New User?
+							<a href="register.html" class="register-link">SIGN UP</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/jquery-latest.min.js"></script>
+<script>
+	$(function(){
+		$(".password-show").click(function(event) {
+			$(this).toggleClass('fa-eye-slash');
+			var x = $(".input-control").attr("type"); //getting attribute in variable
+			if (x == "password") 
+			{
+				$(".input-control").attr("type","text"); //setting attribute on condition
+			}
+			else
+			{
+				$(".input-control").attr("type","password");
+			}
+		});
+	})
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+h1{
+    font-family: 'Rubik Mono One' !important;
+    font-size: 10px;
+}
+
+h6{
+    font-family: 'poppins-medium' !important;
+    font-size: 10px;
+}
+
+.iconx { 
+    text-shadow: 0 0 2px #AD3CFF, 0 0 25px purple, 0 0 5px #9e3cff; 
+} 
+
+.petik{
+    font-family: 'poppins-medium' !important;
+    text-align: left;
+    color: white;
+    font-size: 50px;
+}
+
+.text1{
+    font-family: 'poppins-medium' !important;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
+
+.form-container{
+    background-color: #0c1a46;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-box h1{
+    color: #fff;
+}
+
+.form-box h6{
+    margin: 5px;
+    padding: 0;
+    color: rgb(131, 130, 130);
+}
+
+.sosmed{
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc !important;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 30px;
+    transition: .3s linear;
+    position: relative;
+}
+
+.sosmed i{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: 200% 200%;
+    background-position: 75% 75%;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background .5s linear;
+}
+
+.fa-google{
+    background-image: linear-gradient(135deg,#eb0000,#009b00);
+}
+
+.fa-twitter{
+    background-color: rgb(0, 138, 243);
+}
+
+.fa-linkedin{
+    background-color: rgb(0, 77, 243);
+}
+
+.fa-github{
+    background-color: rgb(2, 2, 2);
+}
+.label{
+    font-size: 30px;
+}
+.form-box .form-input{
+    position: relative;
+}
+
+.form-box .form-input input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    background: transparent !important;
+}
+
+.password-show-card{
+	position: relative
+}
+
+.password-show-card .form-control{
+	width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    background: transparent !important;
+}
+
+
+.password-show-card .password-show{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    /* cursor: pointer; */
+}
+
+.form-box button[type="submit"]{
+    border-radius: 10px;
+    /* cursor: pointer; */
+    width: 100%;
+    height: 40px;
+    background-color: #9e3cff !important;
+    color: white;
+    font-family: 'Rubik Mono One' !important;
+    transition: 0.5s;
+}
+
+.forget-link{
+    color: white;
+    font-family: 'Rubik Mono One' !important;
+    font-size: 8px;
+}
+
+.new-user{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    
+}
+
+.new-user a{
+    color: #952bff;
+    font-weight: bold;
+}

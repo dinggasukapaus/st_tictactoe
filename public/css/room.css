@@ -1,0 +1,152 @@
+body{
+    margin :0;
+    padding: 0;
+    background-color: rgb(12, 26, 70);
+}
+.container{
+	width: 100%
+	margin: auto;
+	overflow: hidden;
+}
+header{
+	position: fixed;
+	width: 100%;
+}
+header nav{
+	padding-top: 30px;
+	float: left;
+	margin-top: 15px:
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 10px 10px 10px 10px;
+	margin-top: 3%;
+}
+header li h1{
+	font-family: 'Rubik mono one';
+	color: white;
+	margin-top: 29%;
+	margin-left: -11%;
+}
+header a, section a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: 'Rubik mono one'; 
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+header .active a, section .active a{
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 10%;
+}
+header a:hover, section a:hover{
+	color: #960083;
+	font-weight: bold;
+}
+
+.kotak{
+    background-color: #AD3CFF;
+    border-radius: 10px;
+    text-align: center;
+}
+.kotak1{
+    background-color: #AD3CFF;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+.kotak2{
+	font-family: 'Rubik Mono One' !important;
+	color: #fff;
+	font-size: 40px;
+    background-color: #AD3CFF;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 60px;
+    margin-left: 60%;
+    margin-top: -30%;
+}
+.kotak3{
+	font-family: 'Rubik Mono One' !important;
+	color: #fff;
+	font-size: 40px;
+    background-color: #AD3CFF;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 60px;
+    margin-left: 60%;
+    margin-top: 3%;
+}
+.kotak4{
+	font-family: 'Rubik Mono One' !important;
+	color: #fff;
+	font-size: 40px;
+    background-color: #AD3CFF;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 60px;
+    margin-left: 60%;
+    margin-top: 3%;
+}
+.kotak5{
+	font-family: 'Rubik Mono One' !important;
+	color: #fff;
+	font-size: 40px;
+    background-color: #AD3CFF;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+    height: 60px;
+    margin-left: 60%;
+    margin-top: 3%;
+}
+#showcase{
+	min-width: 50%;
+	padding-top: 10%;
+	padding-left: 18%;
+}
+#showcase .slice{
+	width: 100%;
+}
+.text{
+    font-family: 'Rubik Mono One' !important;
+    color: white;
+    font-size: 50px;
+    margin-left: -5%;
+    margin-top: -2%;
+}
+.room{
+	font-family: 'Rubik mono one';
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	left: 60%;
+	top: 10%;
+}
+@media(max-width: 768px){
+	header nav, header ul,
+	header nav li{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header{
+		margin: auto;
+		padding-bottom: 50px;
+	}
+	#showcase h1{
+		margin-top: 80px;
+	}
+	.kotak2 .kotak3 .kotak4 .kotak5{
+		margin-top: 80%;
+	}
+}

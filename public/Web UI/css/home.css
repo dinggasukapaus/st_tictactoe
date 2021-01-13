@@ -1,0 +1,108 @@
+body{
+    margin :0;
+    padding: 0;
+    background-color: rgb(12, 26, 70);
+}
+
+.kotak_logo{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 9%;
+    left: 40%;
+    /* background-color: brown; */
+}
+
+.logokanan{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 9%;
+    left: 13%;
+}
+
+.text{
+    /* background-color: red; */
+    position: fixed;
+    margin : 16rem 35rem;
+    width: 15%;
+    height: 8%;
+    font-family:  'Rubik mono one';
+    font-size: 130%;
+    color: white;
+}
+
+.container2{
+    width: 70%;
+    height : 40%;
+    /* background-color: yellow; */
+    position: fixed;
+    margin: 20rem 12rem;
+}
+
+.kotak1{
+    width: 28%;
+    height: 20%;
+    background-color: #AD3CFF;
+    border-radius: 20px;
+    position: absolute;
+    margin: 3rem 9rem;
+}
+
+.kotak2{
+    width: 28%;
+    height: 20%;
+    background-color: #AD3CFF;
+    border-radius: 20px;
+    position: absolute;
+    margin: 8rem 9rem;
+}
+
+.kotak3{
+    width: 28%;
+    height: 20%;
+    background-color: #AD3CFF;
+    border-radius: 20px;
+    position: absolute;
+    margin: 3rem 33rem;
+}
+
+.kotak4{
+    width: 28%;
+    height: 20%;
+    background-color: #AD3CFF;
+    border-radius: 20px;
+    position: absolute;
+    margin: 8em 33rem;
+}
+.kotak1 h1{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-family:  'Rubik mono one';
+    font-size: 200%;
+}
+
+.kotak2 h1{
+    color: white;
+    text-align: center;
+     margin-top: 4%;
+    font-family:  'Rubik mono one';
+    font-size: 150%;
+}
+
+.kotak3 h1{
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+    font-family:  'Rubik mono one';
+    font-size: 150%;
+}
+
+.kotak4 h1{
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+    font-family:  'Rubik mono one';
+    font-size: 150%;
+}

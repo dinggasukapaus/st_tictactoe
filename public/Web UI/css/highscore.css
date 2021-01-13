@@ -1,0 +1,50 @@
+
+.h1{
+    font-family: 'Rubik Mono One' !important;
+    font-size: 10px;
+}
+
+.h6{
+    font-family: 'poppins-medium' !important;
+    font-size: 10px;
+}
+
+.text{
+    font-family: 'Rubik Mono One' !important;
+    color: white;
+    font-size: 40px;
+}
+
+.form-container{
+    background-color: #0c1a46;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.kotak{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 6%;
+    left: 45%;
+}
+  
+h1{
+color: white;
+font-size: 400%;
+font-family: 'Rubik Mono One';
+text-align: center;
+}
+
+.box3{
+border: 3px solid white;
+width: 100%;
+height: 60%;
+}
