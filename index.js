@@ -1,17 +1,41 @@
 var express = require('express')
 var app = express()
+// import db
+const pool = require("./db");
 app.use(express.static('public'))
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 const port = process.env.PORT || 8080
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
 http.listen(port)
 
+
 app.get('/multiplayer', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+//!get
+app.get("/shows",async(req,res)=>{
+  try {
+      // console.log(req.body);
+      const showTB = await pool.query(
+          "SELECT * FROM tb_user ORDER BY id ASC"
+      );
+      res.json(showTB.rows);
+  } catch (err) {
+      console.error(err.message);        
+  }
+});
 
+
+//!ui register
+app.get("/register",function(req,res){
+  res.sendFile(__dirname + '/public/Web UI/register.html');
+});
+
+//! post register
 //!create
 app.post("/register",async(req,res)=>{
   try {
@@ -25,7 +49,8 @@ app.post("/register",async(req,res)=>{
   } catch (err) {
       console.error(err.message);        
   }
-});
+}); 
+
 
 
 var players = {},

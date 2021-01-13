@@ -36,27 +36,31 @@
 					<div class="heading mb-4">
 						<h1>SIGN UP</h1>
 					</div>
-					<form>
+					<form method="POST" action="/register">
+						<div class="form-input text-white">
+							<label class="d-flex label" >nama</label>
+							<input id="nama" type="text" name="nama" placeholder="" required class= "form-control">
+						</div>
 						<div class="form-input text-white">
 							<label class="d-flex label" >Username</label>
-							<input type="text" placeholder="" required class= "form-control">
+							<input id="username" type="text" name="username" placeholder="" required class= "form-control">
 						</div>
 
 						<div class="form-input text-white">
 							<label class="d-flex label" >Password</label>
 						</div>
 						<div class="password-show-card">
-							<input type="password" class="form-control" placeholder="">
+							<input id="password" type="password" name="password" class="form-control" placeholder="">
 							<i class="fa fa-eye password-show text-white"></i>
 						</div>
 
-						<div class="form-input text-white">
+						<!-- <div class="form-input text-white">
 							<label class="d-flex label" >Confirm Password</label>
 						</div>
 						<div class="password-show-card">
 							<input type="password" class="form-control" placeholder="">
 							<i class="fa fa-eye password-show text-white"></i>
-						</div>
+						</div> -->
 
 						<div class="text-left mb-3">
 							<button type="submit" class="btn">Login</button>
