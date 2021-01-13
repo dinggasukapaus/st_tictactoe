@@ -29,6 +29,11 @@ app.get("/shows",async(req,res)=>{
   }
 });
 
+//!ui login
+app.get("/login",function(req,res){
+  res.sendFile(__dirname + '/public/Web UI/login.html');
+});
+
 
 //!ui register
 app.get("/register",function(req,res){
@@ -45,7 +50,8 @@ app.post("/register",async(req,res)=>{
           "INSERT INTO tb_user (nama ,username,password) VALUES ($1,$2,$3) RETURNING *",
           [nama,username,password]
       );
-      res.json(createTB.rows[0]);
+      res.redirect('/login');
+      // res.json(createTB.rows[0]);
   } catch (err) {
       console.error(err.message);        
   }
