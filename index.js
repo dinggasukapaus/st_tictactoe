@@ -35,7 +35,7 @@ app.get("/login",function(req,res){
 });
 
 //!ui login
-app.get("/login",function(req,res){
+app.get("/home",function(req,res){
   res.sendFile(__dirname + '/public/Web UI/home.html');
 });
 
