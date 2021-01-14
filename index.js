@@ -34,6 +34,11 @@ app.get("/login",function(req,res){
   res.sendFile(__dirname + '/public/Web UI/login.html');
 });
 
+//!ui login
+app.get("/login",function(req,res){
+  res.sendFile(__dirname + '/public/Web UI/home.html');
+});
+
 
 //!ui register
 app.get("/register",function(req,res){
