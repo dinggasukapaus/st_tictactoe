@@ -40,7 +40,7 @@ app.post("/login",function(req,res){
     const { username,password } = req.body;
     // console.log(req.body);
     const loginTO = await pool.query(
-        "select * from tb_user where username='$1' and password='$2'",
+        "select * from tb_user where username=$1 and password=$2",
         [username,password]
     );
     // res.redirect('/home');
