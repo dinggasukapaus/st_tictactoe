@@ -35,6 +35,24 @@ app.get("/login",function(req,res){
 });
 
 //!ui login
+app.post("/login",function(req,res){
+  try {
+    const { username,password } = req.body;
+    // console.log(req.body);
+    const loginTO = await pool.query(
+        "select * from tb_user where username='$1' and password='$2'",
+        [username,password]
+    );
+    // res.redirect('/home');
+    console.log(loginTO,'login berhasil');
+    // res.json(createTB.rows[0]);
+} catch (err) {
+    console.error(err.message);        
+}
+  // res.sendFile(__dirname + '/public/Web UI/login.html');
+});
+
+//!ui home
 app.get("/home",function(req,res){
   res.sendFile(__dirname + '/public/Web UI/home.html');
 });
