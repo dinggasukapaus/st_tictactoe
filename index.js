@@ -49,7 +49,7 @@ app.post("/login/post",async(req,res)=>{
       res.redirect('/login');
       // res.json(loginTO.rows[0]);
     }else{
-      res.redirect('/home');
+      res.redirect('/');
       console.log('login berhasil');
       console.log(loginTO.rows[0]);      
     }
