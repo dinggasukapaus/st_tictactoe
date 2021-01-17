@@ -35,7 +35,7 @@ app.get("/login",function(req,res){
 });
 
 //!ui login
-app.post("/login",function(req,res){
+app.post("/login/post",async(req,res)=>{
   try {
     const { username,password } = req.body;
     // console.log(req.body);
@@ -43,11 +43,18 @@ app.post("/login",function(req,res){
         "select * from tb_user where username=$1 and password=$2",
         [username,password]
     );
-    // res.redirect('/home');
-    console.log(loginTO,'login berhasil');
-    // res.json(createTB.rows[0]);
+    if (req.body.username == req.body.password) {
+      res.redirect('/login');
+      // res.json(loginTO.rows[0]);
+      console.log('login gagal');
+    }else{
+      res.redirect('/home');
+      console.log('login berhasil');
+      console.log(loginTO.rows[0]);      
+    }
 } catch (err) {
-    console.error(err.message);        
+    console.error(err.message);    
+        
 }
   // res.sendFile(__dirname + '/public/Web UI/login.html');
 });
