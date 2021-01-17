@@ -17,6 +17,7 @@ app.get('/multiplayer', function(req, res){
 });
 
 //!get
+
 app.get("/shows",async(req,res)=>{
   try {
       // console.log(req.body);
@@ -44,9 +45,9 @@ app.post("/login/post",async(req,res)=>{
         [username,password]
     );
     if (req.body.username == req.body.password) {
+      console.log('login gagal');
       res.redirect('/login');
       // res.json(loginTO.rows[0]);
-      console.log('login gagal');
     }else{
       res.redirect('/home');
       console.log('login berhasil');
@@ -66,6 +67,7 @@ app.get("/home",function(req,res){
 
 
 //!ui register
+//! url yang
 app.get("/register",function(req,res){
   res.sendFile(__dirname + '/public/Web UI/register.html');
 });
@@ -74,12 +76,15 @@ app.get("/register",function(req,res){
 //!create
 app.post("/register",async(req,res)=>{
   try {
+      // data table_user
       const { nama,username,password } = req.body;
       // console.log(req.body);
       const createTB = await pool.query(
           "INSERT INTO tb_user (nama ,username,password) VALUES ($1,$2,$3) RETURNING *",
           [nama,username,password]
       );
+      // redirect login
+      console.log('register berhasil');
       res.redirect('/login');
       // res.json(createTB.rows[0]);
   } catch (err) {
